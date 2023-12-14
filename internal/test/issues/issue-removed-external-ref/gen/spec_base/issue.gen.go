@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"net/http"
 
-	externalRef0 "github.com/obouchet/oapi-codegen/v2/internal/test/issues/issue-removed-external-ref/gen/spec_ext"
 	"github.com/go-chi/chi/v5"
 	strictnethttp "github.com/oapi-codegen/runtime/strictmiddleware/nethttp"
+	externalRef0 "github.com/obouchet/oapi-codegen/v2/internal/test/issues/issue-removed-external-ref/gen/spec_ext"
 )
 
 // DirectBar defines model for DirectBar.
@@ -259,8 +259,8 @@ type StrictServerInterface interface {
 	PostNoTrouble(ctx context.Context, request PostNoTroubleRequestObject) (PostNoTroubleResponseObject, error)
 }
 
-type StrictHandlerFunc = strictnethttp.StrictHttpHandlerFunc
-type StrictMiddlewareFunc = strictnethttp.StrictHttpMiddlewareFunc
+type StrictHandlerFunc = strictnethttp.StrictHTTPHandlerFunc
+type StrictMiddlewareFunc = strictnethttp.StrictHTTPMiddlewareFunc
 
 type StrictHTTPServerOptions struct {
 	RequestErrorHandlerFunc  func(w http.ResponseWriter, r *http.Request, err error)

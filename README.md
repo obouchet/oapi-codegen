@@ -940,11 +940,11 @@ output-options:
     # https://raw.githubusercontent.com/<username>/<project>/<hash|tag|branch>/path/to/template/template.tmpl
 
     # using raw.githubusercontent.com with a hash
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/7b010099dcf1192b3bfaa3898b5f375bb9590ddf/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/obouchet/oapi-codegen/7b010099dcf1192b3bfaa3898b5f375bb9590ddf/pkg/codegen/templates/client-with-responses.tmpl
     # using raw.githubusercontent.com with a tag
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/v1.12.4/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/obouchet/oapi-codegen/v1.12.4/pkg/codegen/templates/client-with-responses.tmpl
     # using raw.githubusercontent.com with a branch
-    client-with-responses.tmpl: https://raw.githubusercontent.com/deepmap/oapi-codegen/master/pkg/codegen/templates/client-with-responses.tmpl
+    client-with-responses.tmpl: https://raw.githubusercontent.com/obouchet/oapi-codegen/master/pkg/codegen/templates/client-with-responses.tmpl
 
     #This example is directly embedding the template into the config file.
     client-with-responses.tmpl: |

@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	remoteRefFile = `https://raw.githubusercontent.com/deepmap/oapi-codegen/master/examples/petstore-expanded` +
+	remoteRefFile = `https://raw.githubusercontent.com/obouchet/oapi-codegen/master/examples/petstore-expanded` +
 		`/petstore-expanded.yaml`
 	remoteRefImport = `github.com/obouchet/oapi-codegen/v2/examples/petstore-expanded`
 )

@@ -27,6 +27,11 @@ func TestIsMediaTypeJson(t *testing.T) {
 			want:      false,
 		},
 		{
+			name:      "When MediaType is application/vnc.other+json;version=v1, returns true",
+			mediaType: "application/vnc.other+json;version=v1",
+			want:      true,
+		},
+		{
 			name:      "When MediaType is application/json, returns true",
 			mediaType: "application/json",
 			want:      true,
@@ -44,6 +49,18 @@ func TestIsMediaTypeJson(t *testing.T) {
 		{
 			name:      "When MediaType is application/vnd.api+json, returns true",
 			mediaType: "application/vnd.api+json",
+			want:      true,
+		},
+		{
+			// NOTE that this _technically_ isn't a standard extension to JSON https://www.iana.org/assignments/media-types/application/json but due to the fact that several APIs do use it, we should support it
+			name:      "When MediaType is application/json;v=1, returns true",
+			mediaType: "application/json;v=1",
+			want:      true,
+		},
+		{
+			// NOTE that this _technically_ isn't a standard extension to JSON https://www.iana.org/assignments/media-types/application/json but due to the fact that several APIs do use it, we should support it
+			name:      "When MediaType is application/json;version=1, returns true",
+			mediaType: "application/json;version=1",
 			want:      true,
 		},
 	}
